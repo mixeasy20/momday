@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Itim', cursive, sans-serif;
+  background-color: #FAF6F0;
+  color: #4A3E3D;
+  overflow-x: hidden;
+}
+
+/* Paper texture and subtle grain */
+.paper-texture {
+  background-color: #FAF6F0;
+  background-image: 
+    radial-gradient(#E8DFD5 0.75px, transparent 0.75px),
+    radial-gradient(#E8DFD5 0.75px, #FAF6F0 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.scrapbook-card {
+  box-shadow: 0 4px 20px -2px rgba(133, 94, 86, 0.12), 0 2px 6px -1px rgba(133, 94, 86, 0.08);
+}
+
+.tape {
+  background: rgba(254, 240, 215, 0.75);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  backdrop-filter: blur(1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E4D5C7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4BEAB;
+}
